@@ -108,7 +108,7 @@ int main(void)
   /* Unlock the Flash Program Erase controller */
   HAL_FLASH_Unlock();
 
-  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
 
   /* EEPROM Init */
   if( EE_Init() != EE_OK)
